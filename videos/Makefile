@@ -13,18 +13,73 @@ vim_session:
 ## Dropbox subdirectories
 
 ## mkdir ~/Dropbox/Workshops/edited_videos ##
-drop: dl out
+drop =  dl out zoom
+
+drop: $(drop)
+
+Ignore += $(drop)
 
 dl: dir = ~/Dropbox/Workshops/videos
 dl:
 	$(linkdirname)
 
+zoom: dir = ~/Dropbox/Zoom
+zoom:
+	$(linkdirname)
+
 out: dir = ~/Dropbox/Workshops/edited_videos
 out:
 	$(linkdirname)
-out/%: out
-out/Foundations.clip1.mp4: dl/Foundations17.mp4 Makefile
+
+######################################################################
+
+## Foundations MMED 2017 (and intro sub-video)
+out/Foundations.clip1.mp4: dl/Foundations17.mp4
 	ffmpeg -y -i $< -ss 5 -to 830 -acodec copy $@
+
+Ignore += *.mp4
+
+## Foundations DAIDD 2020 (just the Discussion part)
+Foundations.Discuss.0.mp4: zoom/family/zoom_0.mp4
+	ffmpeg -y -i $< -ss 4 -to 235 -acodec copy $@
+
+Foundations.Discuss.1.mp4: zoom/family/zoom_0.mp4
+	ffmpeg -y -i $< -ss 260 -to 585 -acodec copy $@
+
+Foundations.Discuss.2.mp4: zoom/family/zoom_0.mp4
+	ffmpeg -y -i $< -ss 1153 -to 1386 -acodec copy $@
+
+Foundations.Discuss.3.mp4: zoom/family/zoom_0.mp4
+	ffmpeg -y -i $< -ss 1522 -to 1940 -acodec copy $@
+
+out/Foundations.Discuss.edit.mp4: Foundations.Discuss.0.mp4 Foundations.Discuss.1.mp4 Foundations.Discuss.2.mp4 Foundations.Discuss.3.mp4 Foundations.Discuss.comb.txt
+
+######################################################################
+
+## Rules for making and using concat
+## Work on comb.txt depedencies combine * and %?
+
+%.comb.txt: 
+	ls $*.?.mp4 | perl -npe "s/.*/file '$$&'/" >  $@
+%.edit.mp4:
+	ffmpeg -f concat -i $(filter %.txt, $^) -codec copy $@
+
+######################################################################
+
+### Example ony!
+
+Foundations1.mp4: dl/Foundations17.mp4
+	ffmpeg -y -i $< -ss 5 -to 16 -acodec copy $@
+
+Foundations2.mp4: dl/Foundations17.mp4
+	ffmpeg -y -i $< -ss 222 -to 233 -acodec copy $@
+
+Foundations_comb.mp4: Foundations_comb.txt Foundations1.mp4 Foundations2.mp4
+	ffmpeg -f concat -i $< -codec copy $@
+
+## Does not work (first file only)
+Foundations_new.mp4: Foundations1.mp4 Foundations2.mp4
+	ffmpeg -i "concat:Foundations1.mp4|Foundations2.mp4" -c:a copy -c:v copy $@
 
 ######################################################################
 
