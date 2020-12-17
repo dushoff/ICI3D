@@ -75,13 +75,28 @@ out/Het.Frame.edit.mp4: Het.Frame.0.mp4 Het.Frame.1.mp4 Het.Frame.2.mp4 Het.Fram
 
 ######################################################################
 
+## Assessment
+
+Assessment.0.mp4: zoom/assessment1/zoom_0.mp4
+	ffmpeg -y -i $< -ss 3 -to 1092 -acodec copy $@
+
+Assessment.1.mp4: zoom/assessment1/zoom_4.mp4
+	ffmpeg -y -i $< -ss 24 -to 1187 -acodec copy $@
+
+Assessment.2.mp4: zoom/assessment2/zoom_0.mp4
+	ffmpeg -y -i $< -ss 4 -to 696 -acodec copy $@
+
+out/Assessment.edit.mp4: Assessment.0.mp4 Assessment.1.mp4 Assessment.2.mp4 Assessment.comb.txt
+
+######################################################################
+
 ## Rules for making and using concat
 ## Work on comb.txt depedencies combine * and %?
 .SECONDEXPANSION:
 %.comb.txt: $$(wildcard $$*.?.mp4)
 	ls $*.?.mp4 | perl -npe "s/.*/file '$$&'/" >  $@
 %.edit.mp4:
-	$(MVF) $@ $*.tmp.mp4
+	touch $@; $(MVF) $@ $*.tmp.mp4
 	ffmpeg -f concat -i $(filter %.txt, $^) -codec copy $@
 
 ######################################################################
