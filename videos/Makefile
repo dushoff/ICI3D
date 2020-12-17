@@ -108,16 +108,6 @@ out/Assessment.edit.mp4: Assessment.0.mp4 Assessment.1.mp4 Assessment.2.mp4 Asse
 Foundations1.mp4: dl/Foundations17.mp4
 	ffmpeg -y -i $< -ss 5 -to 16 -acodec copy $@
 
-Foundations2.mp4: dl/Foundations17.mp4
-	ffmpeg -y -i $< -ss 222 -to 233 -acodec copy $@
-
-Foundations_comb.mp4: Foundations_comb.txt Foundations1.mp4 Foundations2.mp4
-	ffmpeg -f concat -i $< -codec copy $@
-
-## Does not work (first file only)
-Foundations_new.mp4: Foundations1.mp4 Foundations2.mp4
-	ffmpeg -i "concat:Foundations1.mp4|Foundations2.mp4" -c:a copy -c:v copy $@
-
 ######################################################################
 
 ### Makestuff
