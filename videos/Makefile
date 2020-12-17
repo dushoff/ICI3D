@@ -75,6 +75,8 @@ out/Het.Frame.edit.mp4: Het.Frame.0.mp4 Het.Frame.1.mp4 Het.Frame.2.mp4 Het.Fram
 
 ######################################################################
 
+Ignore += *.mp4 *.comb.txt
+
 ## Assessment
 
 Assessment.0.mp4: zoom/assessment1/zoom_0.mp4
