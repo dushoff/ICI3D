@@ -10,6 +10,10 @@ current: target
 subdirs += videos dp2020
 alldirs += $(subdirs)
 
+MMED_resources: dir= MMED/pages/ICI3D.github.io
+MMED_resources: 
+	$(linkdirname)
+
 ######################################################################
 
 vim_session: 
