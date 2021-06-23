@@ -9,8 +9,6 @@ XX. RTutorials: https://github.com/ICI3D/RTutorials
 
 XX. videos
 
-
-
 ----------------------------------------------------------------------
 
 XX. DAIDD:  https://github.com/ICI3D/DAIDD.git  ../ici3d/DAIDD/
