@@ -73,6 +73,20 @@ Het.Frame.6.mp4:  zoom/het2/zoom_2.mp4
 
 out/Het.Frame.edit.mp4: Het.Frame.0.mp4 Het.Frame.1.mp4 Het.Frame.2.mp4 Het.Frame.3.mp4 Het.Frame.4.mp4 Het.Frame.5.mp4 Het.Frame.6.mp4 Het.Frame.comb.txt
 
+## Heterogeneity DAIDD 2020
+likelyPull.0.mp4: zoom/likelyPull/zoom_1.mp4
+	ffmpeg -y -i $< -ss 1 -to 399 -acodec copy $@
+likelyPull.1.mp4: zoom/likelyPull/zoom_1.mp4
+	ffmpeg -y -i $< -ss 525 -to 691 -acodec copy $@
+likelyPull.2.mp4: zoom/likelyPull/zoom_1.mp4
+	ffmpeg -y -i $< -ss 774 -to 937 -acodec copy $@
+likelyPull.3.mp4: zoom/likelyPull/zoom_1.mp4
+	ffmpeg -y -i $< -ss 956 -to 1255 -acodec copy $@
+likelyPull.4.mp4: zoom/likelyPull/zoom_1.mp4
+	ffmpeg -y -i $< -ss 1271 -to 1292 -acodec copy $@
+
+out/likelyPull.edit.mp4: likelyPull.0.mp4 likelyPull.1.mp4 likelyPull.2.mp4 likelyPull.3.mp4 likelyPull.4.mp4 likelyPull.comb.txt
+
 ######################################################################
 
 Ignore += *.mp4 *.comb.txt
