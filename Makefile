@@ -1,4 +1,4 @@
-## This is the screendir ICI4D
+## This is the screendir ICI3D
 
 current: target
 -include target.mk
