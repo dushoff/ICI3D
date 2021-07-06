@@ -15,6 +15,8 @@ datasets: https://github.com/ICI3D/datasets ## NOALL
 
 ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
 
+XX. stochInv: https://github.com/ICI3D/stochasticInvasion.git
+
 ----------------------------------------------------------------------
 
 XX. DAIDD:  https://github.com/ICI3D/DAIDD.git  ../ici3d/DAIDD/
