@@ -73,7 +73,7 @@ Het.Frame.6.mp4:  zoom/het2/zoom_2.mp4
 
 out/Het.Frame.edit.mp4: Het.Frame.0.mp4 Het.Frame.1.mp4 Het.Frame.2.mp4 Het.Frame.3.mp4 Het.Frame.4.mp4 Het.Frame.5.mp4 Het.Frame.6.mp4 Het.Frame.comb.txt
 
-## Heterogeneity DAIDD 2020
+## Likelihood DAIDD 2020 (Pulliam slides)
 likelyPull.0.mp4: zoom/likelyPull/zoom_1.mp4
 	ffmpeg -y -i $< -ss 1 -to 399 -acodec copy $@
 likelyPull.1.mp4: zoom/likelyPull/zoom_1.mp4
@@ -87,11 +87,33 @@ likelyPull.4.mp4: zoom/likelyPull/zoom_1.mp4
 
 out/likelyPull.edit.mp4: likelyPull.0.mp4 likelyPull.1.mp4 likelyPull.2.mp4 likelyPull.3.mp4 likelyPull.4.mp4 likelyPull.comb.txt
 
+## Assessment MMED21 (DAiDD is below)
+assess.0.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 3 -to 128 -acodec copy $@
+assess.1.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 173 -to 340 -acodec copy $@
+assess.2.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 378 -to 387 -acodec copy $@
+assess.3.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 410 -to 448 -acodec copy $@
+assess.4.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 467 -to 1199 -acodec copy $@
+assess.5.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 1229 -to 1598 -acodec copy $@
+assess.6.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 1628 -to 1803 -acodec copy $@
+assess.7.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 1858 -to 2080 -acodec copy $@
+assess.8.mp4: zoom/assess/zoom_0.mp4
+	ffmpeg -y -i $< -ss 2098 -to 2390 -acodec copy $@
+
+out/assess.edit.mp4: assess.0.mp4 assess.1.mp4 assess.2.mp4 assess.3.mp4 assess.4.mp4 assess.5.mp4 assess.6.mp4 assess.7.mp4 assess.8.mp4 assess.comb.txt
+
 ######################################################################
 
 Ignore += *.mp4 *.comb.txt
 
-## Assessment
+## Assessment DAIDD 2020
 
 Assessment.0.mp4: zoom/assessment1/zoom_0.mp4
 	ffmpeg -y -i $< -ss 3 -to 1092 -acodec copy $@
