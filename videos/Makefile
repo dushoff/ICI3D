@@ -33,6 +33,11 @@ out:
 
 ######################################################################
 
+out/workflow.mp4: zoom/workflow/zoom_0.mp4
+	ffmpeg -y -i $< -ss 73 -to 128 -acodec copy $@
+
+######################################################################
+
 ## Foundations MMED 2017 (and intro sub-video)
 out/Foundations.clip1.mp4: dl/Foundations17.mp4
 	ffmpeg -y -i $< -ss 5 -to 830 -acodec copy $@
