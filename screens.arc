@@ -1,9 +1,13 @@
 
-XX. MMED:  https://github.com/ICI3D/MMED.git  ../ici3d/MMED/
+MMED:  https://github.com/ICI3D/MMED.git  ../ici3d/MMED/
 
-XX. MMED/pages
+MMED/pages
 
-XX. MMED_resources:
+MMED_resources:
+
+XX. DAIDD:  https://github.com/ICI3D/DAIDD.git  ../ici3d/DAIDD/
+
+XX. DAIDD/pages
 
 XX. RTutorials: https://github.com/ICI3D/RTutorials
 
@@ -16,9 +20,3 @@ datasets: https://github.com/ICI3D/datasets ## NOALL
 ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
 
 XX. stochInv: https://github.com/ICI3D/stochasticInvasion.git
-
-----------------------------------------------------------------------
-
-XX. DAIDD:  https://github.com/ICI3D/DAIDD.git  ../ici3d/DAIDD/
-
-XX. DAIDD/pages
