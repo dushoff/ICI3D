@@ -1,9 +1,12 @@
 
-XX. DAIDD:  https://github.com/ICI3D/DAIDD.git  ../ici3d/DAIDD/
+## Paranoid safety 2021 Dec 11 (Sat). Delete
+oldDAIDD: https://github.com/ICI3D/DAIDD.git
+
+XX. DAIDD: https://github.com/ICI3D/DAIDD.git
 
 XX. DAIDD/pages
 
-MMED:  https://github.com/ICI3D/MMED.git  ../ici3d/MMED/
+MMED:  https://github.com/ICI3D/MMED.git
 
 MMED/pages
 
