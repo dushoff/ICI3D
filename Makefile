@@ -10,6 +10,7 @@ current: target
 subdirs += videos dp2020
 alldirs += $(subdirs)
 
+Ignore += MMED_resources
 MMED_resources: dir= MMED/pages/ICI3D.github.io
 MMED_resources: 
 	$(linkdirname)

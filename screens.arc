@@ -11,7 +11,8 @@ MMED:  https://github.com/ICI3D/MMED.git
 MMED/pages:
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
-MMED_resources: ## Role not clear, but it's here
+## Rule is in Makefile
+MMED_resources
 
 XX. RTutorials: https://github.com/ICI3D/RTutorials
 
