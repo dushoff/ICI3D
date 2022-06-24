@@ -19,7 +19,6 @@ XX. RTutorials: https://github.com/ICI3D/RTutorials
 XX. videos
 
 XX. io: https://github.com/ICI3D/ICI3D.github.io
-XX. jo: https://github.com/ICI3D/ICI3D.github.io
 
 rabies_intervals: https://github.com/wzmli/time_interval_project.git
 
