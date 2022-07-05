@@ -2,6 +2,8 @@
 ## Paranoid safety 2021 Dec 11 (Sat). Delete
 oldDAIDD: https://github.com/ICI3D/DAIDD.git
 
+XX. archive: https://github.com/ICI3D/archive.git
+
 XX. DAIDD: https://github.com/ICI3D/DAIDD.git
 
 XX. DAIDD/pages
