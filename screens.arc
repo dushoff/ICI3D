@@ -8,7 +8,8 @@ XX. DAIDD: https://github.com/ICI3D/DAIDD.git
 
 XX. DAIDD/pages
 
-XX. MMED:  https://github.com/ICI3D/MMED.git
+## Something is messed up about the main branch
+MMED:  https://github.com/ICI3D/MMED.git
 
 MMED/pages:
 
