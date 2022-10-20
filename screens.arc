@@ -30,3 +30,7 @@ datasets: https://github.com/ICI3D/datasets ## NOALL
 ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
 
 stochInv: https://github.com/ICI3D/stochasticInvasion.git
+
+## Email management?
+
+lists: https://github.com/dushoff/ICI3Dlists.git
