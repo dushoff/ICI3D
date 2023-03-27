@@ -1,4 +1,4 @@
-## This is a _linked_ (mkfile) Makefile for …
+## This is a _linked_ (mkfile) Makefile for ICI3D_theme
 
 current: target
 -include target.mk
@@ -7,6 +7,10 @@ current: target
 
 vim_session:
 	bash -cl "vmt"
+
+######################################################################
+
+Sources += README.md
 
 ######################################################################
 
