@@ -1,16 +1,16 @@
 
 XX. archive: https://github.com/ICI3D/archive.git
 
-XX. DAIDD: https://github.com/ICI3D/DAIDD.git
+DAIDD: https://github.com/ICI3D/DAIDD.git
 
-XX. DAIDD/pages
+DAIDD/pages
 
-XX. DAIDD/pages/ICI3D.github.io/
+DAIDD/pages/ICI3D.github.io/
 
 ## Something is messed up about the main branch
-MMED:  https://github.com/ICI3D/MMED.git
+XX. MMED:  https://github.com/ICI3D/MMED.git
 
-MMED/pages:
+XX. MMED/pages:
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
 ## Rule is in Makefile
