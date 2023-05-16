@@ -17,6 +17,8 @@ XX. MMED/pages:
 
 MMED_resources
 
+XX. muizenberg: https://github.com/ICI3D/MMEDparticipants
+
 XX. RTutorials: https://github.com/ICI3D/RTutorials
 
 XX. videos
