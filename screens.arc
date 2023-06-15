@@ -12,7 +12,7 @@ DAIDD/pages/ICI3D.github.io/
 XX. MMED:  https://github.com/ICI3D/MMED.git
 
 ## Don't even know what branches are active, which are serving, where to view jekyll; don't have any sync machinery
-MMED/pages:
+XX. MMED/pages:
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
 ## Rule is in Makefile
