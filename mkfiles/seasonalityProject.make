@@ -25,10 +25,14 @@ explore.Rout: explore.R
 
 compareOutputs.Rout: compareOutputs.R 
 
+seasonalData.Rout: seasonalData.R
+
+## check.probSeasonalObs.func.Rout: check.probSeasonalObs.func.R
+## peakshift.Rout: peakshift.R
+
 ######################################################################
 
 ## JD version (no good reason for this to exist yet)
-
 
 newsim.Rout: newsim.R
 
