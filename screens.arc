@@ -50,3 +50,5 @@ stochInv: https://github.com/ICI3D/stochasticInvasion.git
 ## Email management?
 
 lists: https://github.com/dushoff/ICI3Dlists.git
+
+XX. seasonalityProject: https://github.com/ICI3D/seasonalityProject
