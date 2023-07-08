@@ -52,3 +52,7 @@ stochInv: https://github.com/ICI3D/stochasticInvasion.git
 lists: https://github.com/dushoff/ICI3Dlists.git
 
 XX. seasonalityProject: https://github.com/ICI3D/seasonalityProject
+
+XX. season23: https://github.com/ICI3D/seasonalityProject
+
+XX. season_jd: https://github.com/ICI3D/seasonalityProject
