@@ -1,5 +1,6 @@
-## This is a _linked_ (mkfile) Makefile for …
 ## This is a _linked_ (mkfile) Makefile for season_jd (the faculty branch of seasonalityProject)
+
+Makefile: faculty.setbranch
 
 current: target
 -include target.mk

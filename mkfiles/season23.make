@@ -29,6 +29,12 @@ likelihood.Rout: likelihood.R fakeData.rds sim_func.R
 
 ######################################################################
 
+## 2023 Jul 12 (Wed) Cheap branch control
+
+Makefile: 2023.setbranch
+
+######################################################################
+
 ### Makestuff
 
 ## Sources += $(wildcard *.mk)
