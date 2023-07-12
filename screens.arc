@@ -29,8 +29,6 @@ XX. videos
 
 XX. io: https://github.com/ICI3D/ICI3D.github.io
 
-ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
-
 ######################################################################
 
 Themes
@@ -39,22 +37,22 @@ All of the submodule stuff has been moved to a theme repo (not yet recorded here
 
 Old theme repo not in use, there is a new theme repo but it is a gem or something else intimidating.
 
-theme: https://github.com/ICI3D/jekyll-theme-ici3d
-
-######################################################################
-
-## Projects, I guess
+XX. theme: https://github.com/ICI3D/jekyll-theme-ici3d
 
 rabies_intervals: https://github.com/wzmli/time_interval_project.git
 
 datasets: https://github.com/ICI3D/datasets ## NOALL
 
+ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
+
 stochInv: https://github.com/ICI3D/stochasticInvasion.git
-
-2023 is a seasonality project
-
-######################################################################
 
 ## Email management?
 
 lists: https://github.com/dushoff/ICI3Dlists.git
+
+XX. seasonalityProject: https://github.com/ICI3D/seasonalityProject
+
+XX. season23: https://github.com/ICI3D/seasonalityProject
+
+XX. season_jd: https://github.com/ICI3D/seasonalityProject
