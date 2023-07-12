@@ -1,5 +1,4 @@
 ## This is a _linked_ (mkfile) Makefile for Seasonality Project
-## It spans branches!!!!
 
 current: target
 -include target.mk
