@@ -32,6 +32,7 @@ likelihood.Rout: likelihood.R fakeData.rds sim_func.R
 ## 2023 Jul 12 (Wed) Cheap branch control
 ## Only works with mkfiles; otherwise it won't be seen until not needed!
 
+Ignore += 2023.setbranch
 Makefile: 2023.setbranch
 
 ######################################################################
