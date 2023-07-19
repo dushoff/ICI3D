@@ -1,5 +1,6 @@
 ## This is a _linked_ (mkfile) Makefile for season_jd (the faculty branch of seasonalityProject)
 
+## setbranch is terrible; we need listdir rules to set branches
 Makefile: faculty.setbranch
 
 current: target

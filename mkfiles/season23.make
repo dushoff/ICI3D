@@ -45,7 +45,6 @@ Makefile: 2023.setbranch
 Ignore += Makefile
 Ignore += makestuff
 msrepo = https://github.com/dushoff
-Makefile: makestuff/Makefile
 makestuff/Makefile:
 	ln -s ../makestuff .
 	ls makestuff/Makefile
