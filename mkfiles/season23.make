@@ -32,8 +32,7 @@ likelihood.Rout: likelihood.R fakeData.rds sim_func.R
 ## 2023 Jul 12 (Wed) Cheap branch control
 ## Only works with mkfiles; otherwise it won't be seen until not needed!
 
-Ignore += 2023.setbranch
-Makefile: 2023.setbranch
+commit.time : | 2023.setbranch
 
 ######################################################################
 
@@ -45,9 +44,12 @@ Makefile: 2023.setbranch
 Ignore += Makefile
 Ignore += makestuff
 msrepo = https://github.com/dushoff
-makestuff/Makefile:
-	ln -s ../makestuff .
-	ls makestuff/Makefile
+
+Makefile: makestuff/00.stamp
+makestuff/%.stamp:
+	- $(RM) makestuff/*.stamp
+	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff
+	touch $@
 
 -include makestuff/os.mk
 
