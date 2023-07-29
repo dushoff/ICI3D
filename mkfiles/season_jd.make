@@ -1,7 +1,9 @@
 ## This is a _linked_ (mkfile) Makefile for season_jd (the faculty branch of seasonalityProject)
 
-## setbranch is terrible; we need listdir rules to set branches
-Makefile: faculty.setbranch
+## We need listdir rules to set branches; this only works for .mkfile projects
+commit.time : | 2023.setbranch
+
+######################################################################
 
 current: target
 -include target.mk
@@ -29,10 +31,12 @@ newsim.Rout: newsim.R
 Ignore += Makefile
 Ignore += makestuff
 msrepo = https://github.com/dushoff
-Makefile: makestuff/Makefile
-makestuff/Makefile:
-	ln -s ../makestuff .
-	ls makestuff/Makefile
+
+Makefile: makestuff/00.stamp
+makestuff/%.stamp:
+	- $(RM) makestuff/*.stamp
+	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff
+	touch $@
 
 -include makestuff/os.mk
 
