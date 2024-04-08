@@ -2,17 +2,17 @@ http://127.0.0.1:2052/
 
 XX. archive: https://github.com/ICI3D/archive.git
 
-XX. DAIDD: https://github.com/ICI3D/DAIDD.git
+DAIDD: https://github.com/ICI3D/DAIDD.git
 
-XX. DAIDD/pages
+DAIDD/pages
 
 DAIDD/pages/ICI3D.github.io/
 
 ## Something is messed up about the main branch
-MMED:  https://github.com/ICI3D/MMED.git
+XX. MMED:  https://github.com/ICI3D/MMED.git
 
 ## Don't even know what branches are active, which are serving, where to view jekyll; don't have any sync machinery
-MMED/pages:
+XX. MMED/pages:
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
 ## Rule is in Makefile
