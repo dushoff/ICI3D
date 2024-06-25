@@ -45,8 +45,9 @@ ici3d_pkg: https://github.com/ICI3D/ici3d-pkg.git ## NOALL
 
 stochInv: https://github.com/ICI3D/stochasticInvasion.git
 
-## Email management?
+######################################################################
 
+Email management (not used!)
 lists: https://github.com/dushoff/ICI3Dlists.git
 
 XX. seasonalityProject: https://github.com/ICI3D/seasonalityProject
@@ -54,3 +55,10 @@ XX. seasonalityProject: https://github.com/ICI3D/seasonalityProject
 XX. season23: https://github.com/ICI3D/seasonalityProject
 
 XX. season_jd: https://github.com/ICI3D/seasonalityProject
+
+######################################################################
+
+2024 projects
+
+measlesPop: https://github.com/wagathu/measlesMMED.git ## NOALL
+homophily: https://github.com/LeratoRamoyadi/MMED-GROUP-5.git ## NOALL
