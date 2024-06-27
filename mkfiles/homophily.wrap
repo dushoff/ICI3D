@@ -1,0 +1,37 @@
+## This is a _linked_ WRAPPER makefile for homophily (MMED 2024)
+
+current: target
+-include target.mk
+
+vim_session:
+	bash -cl "vmt"
+
+######################################################################
+
+autopipeR = defined
+
+## MMED_Group5_Code.Rout: MMED_Group5_Code.R
+
+## checking.Rout: checking.R
+
+######################################################################
+
+### Makestuff
+
+## Sources += $(wildcard *.mk)
+## include $(wildcard *.mk)
+
+Ignore += makefile
+Ignore += makestuff
+msrepo = https://github.com/dushoff
+makefile: makestuff/Makefile
+makestuff/Makefile:
+	ln -s ../makestuff .
+	ls makestuff/Makefile
+
+-include makestuff/os.mk
+
+-include makestuff/pipeR.mk
+
+-include makestuff/git.mk
+-include makestuff/visual.mk
