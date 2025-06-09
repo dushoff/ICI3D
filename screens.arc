@@ -9,9 +9,10 @@ DAIDD/pages
 DAIDD/pages/ICI3D.github.io/
 
 ## Something is messed up about the main branch
+## Main branch has been abandoned 2025 Jun 08 (Sun)!!!
 MMED:  https://github.com/ICI3D/MMED.git
 
-## Don't even know what branches are active, which are serving, where to view jekyll; don't have any sync machinery
+## This is the only non-CarL-active branch
 MMED/pages:
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
