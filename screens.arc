@@ -15,7 +15,7 @@ XX. MMED:  https://github.com/ICI3D/MMED.git
 
 ## This is the only non-CarL-active branch. 
 ## Don't use this subdirectory until something changes
-MMED/pages:
+## MMED/pages: deprecated
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
 ## Rule is in Makefile
