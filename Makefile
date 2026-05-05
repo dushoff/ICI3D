@@ -18,10 +18,14 @@ MMED_resources:
 ######################################################################
 
 vim_session: 
-	bash -ic "vmt screens.list"
+	bash -ic "vmt screens.list todo.md resources.md"
 	
 screen_session: screens.update
 	$(MAKE) $(vscreens)
+
+######################################################################
+
+Sources += $(wildcard *.md)
 
 ######################################################################
 
