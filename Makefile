@@ -18,7 +18,9 @@ MMED_resources:
 ######################################################################
 
 vim_session: 
-	bash -cl "vmt screens.list"
+	bash -ic "vmt screens.list README.md TODO.md"
+
+Sources += $(wildcard *.md)
 	
 screen_session: screens.update
 	$(MAKE) $(vscreens)
