@@ -13,8 +13,9 @@ DAIDD/pages/ICI3D.github.io/
 ## This is currently set to the pages branch, change back if necessary.
 XX. MMED:  https://github.com/ICI3D/MMED.git
 
-## This is the only non-CarL-active branch. Don't use this subdirectory until something changes
-MMED/pages:
+## This is the only non-CarL-active branch. 
+## Don't use this subdirectory until something changes
+## MMED/pages: deprecated
 
 ## linkdir for the ici3d.github subdir inside MMED/pages
 ## Rule is in Makefile
